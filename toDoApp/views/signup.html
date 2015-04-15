@@ -1,0 +1,20 @@
+<md-toolbar layout="row"><h1 class="md-toolbar-tools" layout-align-gt-sm="center">Welcome To Muhammad Sami ToDo App</h1></md-toolbar>
+<h1> this is {{title}} </h1>
+
+<md-content md-theme="docs-dark" layout-padding layout="column" layout-sm="column">
+    <md-input-container>
+        <label>User Name</label>
+        <input ng-model="userForSignUp.userName">
+    </md-input-container>
+    <md-input-container>
+        <label>Email</label>
+        <input ng-model="userForSignUp.email" type="email">
+    </md-input-container>
+    <md-input-container>
+        <label>Password</label>
+        <input ng-model="userForSignUp.password" type="password">    </md-input-container>
+    <section layout="row" layout-sm="column" layout-align="center center">
+
+        <md-button class="md-raised" ng-click="SignUp()">sign up</md-button>
+    </section>
+</md-content>
